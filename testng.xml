@@ -1,0 +1,9 @@
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="appurl" value="http://www.fb.com"/>
+  <parameter name="grid" value="http://localhost:4444"/>
+    <packages>
+      <package name="script"/>
+    </packages>
+  </test>
+</suite>

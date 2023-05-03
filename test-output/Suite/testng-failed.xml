@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="grid" value="http://localhost:4444"/>
+    <parameter name="appurl" value="http://www.fb.com"/>
+    <classes>
+      <class name="script.DemoTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="demoTest1"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.DemoTest -->
+      <class name="script.Demo1Test">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+          <include name="demoTest1"/>
+        </methods>
+      </class> <!-- script.Demo1Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
