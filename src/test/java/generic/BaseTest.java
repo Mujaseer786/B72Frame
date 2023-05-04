@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -19,7 +20,7 @@ import org.testng.annotations.Parameters;
 public class BaseTest {
 	public static final String DEFAULT_URL="http://www.google.com";
 	public static final String DEFAULT_GRID="no";
-	public static final String DEFAULT_BROWSER="chrome";
+	public static final String DEFAULT_BROWSER="edge";
 	public static final String XL_PATH="./data/input.xlsx";
 	
 	public WebDriver driver;
@@ -39,8 +40,8 @@ public class BaseTest {
 			}
 			else
 			{
-				Reporter.log("Browser is: Firefox",true);
-				driver=new FirefoxDriver();
+				Reporter.log("Browser is: Edge",true);
+				driver=new EdgeDriver ();
 			}
 		}
 		else

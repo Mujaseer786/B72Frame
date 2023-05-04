@@ -1,7 +1,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  <parameter name="appurl" value="http://www.fb.com"/>
-  <parameter name="grid" value="http://localhost:4444"/>
+  <parameter name="appurl" value="http://www.google.com"/>
+  <parameter name="grid" value="no"/>
+  <parameter name="browser" value="edge"/>
     <packages>
       <package name="script"/>
     </packages>
